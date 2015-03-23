@@ -1,0 +1,14 @@
+<% @questions.each do |question| %>
+
+<ul>
+  <li><a href="/questions/<%=question.id %>"><%= question.title %></a></li>
+  <li><%= question.body %></li>
+  <li><%= question.votes %></li>
+</ul>
+
+
+<% end %>
+
+<a href="/">Return to home</a>
+<br>
+<a href="/questions/new">Click here to post a new question</a?
